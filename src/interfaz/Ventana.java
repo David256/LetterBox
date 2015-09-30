@@ -14,6 +14,7 @@ public class Ventana extends JFrame{
 
 	private void MostrarVentana() {
 		// TODO Auto-generated method stub
+		setSize(320,480);
 		setVisible(true);
 	}
 	
