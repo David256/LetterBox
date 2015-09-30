@@ -5,6 +5,7 @@ import javax.swing.JFrame;
 public class Ventana extends JFrame{
 	
 	JFrame elFrame = new JFrame();
+	uPanel elPanel = new uPanel();
 	
 
 }
