@@ -7,6 +7,8 @@ public class Principal {
 	public static void main(String[] args) {
 		ventana = new Ventana();
 		
+		ventana.setVisible(true);
+		
 	}
 
 }

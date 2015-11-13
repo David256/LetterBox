@@ -8,12 +8,16 @@ import javax.swing.JLabel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
+import eventos.HandleTextChat;
+
 public class Ventana extends JFrame{
 	
 	uPanel elPanel = new uPanel();
 	JLabel logo = new JLabel("Letter BOX");
 	JTextArea elChat = new JTextArea("Iniciando chat..\n>>");
-	JTextField entrada = new JTextField("_"); 
+	JTextField entrada = new JTextField("_");
+	
+	HandleTextChat htc = new HandleTextChat();
 	
 	
 	
@@ -42,14 +46,10 @@ public class Ventana extends JFrame{
 		elPanel.add(elChat);
 		elPanel.add(entrada);
 		
-		this.add(elPanel);
-		MostrarVentana();
+		entrada.addKeyListener(htc);
 		
-	}
-
-	private void MostrarVentana() {
-		// TODO Auto-generated method stub
-		setVisible(true);
+		this.add(elPanel);
+		
 	}
 	
 
